@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220517012120">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220518012441">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -89,17 +89,69 @@
 							</div>
 							<div class="body-main-slider__controll">Тут буллеты</div>
 						</div>
-
 					</div>
 					<nav class="main-slider__menu menu-slider">
 						<a href="" class="menu-slider__link">#Bar</a>
 						<a href="" class="menu-slider__link">#Gericht</a>
 					</nav>
-					<button data-da=".body-main-slider__swiper, 1445,1" type="submit" class="menu-slider__scroll scroll">Scroll</button>
+					<button data-goto=".about-section" data-da=".body-main-slider__swiper, 1445,1" type="submit" class="menu-slider__scroll scroll">Scroll</button>
 				</div>
 			</section>
+			<section data-bg data-goto="#about-section" class="mainpage__about about-section">
+				<div class="about-section__container">
+					<div class="about-section__content">
+						<div class="about-section__title">About Us</div>
+						<div class="about-section__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</div>
+						<a href="" class="about-section__btn button">Know More</a>
+					</div>
+					<div class="about-section__knife">
+						<picture><source srcset="img/mainpage/about/knife.webp" type="image/webp"><img src="img/mainpage/about/knife.png" alt="knife"></picture>
+					</div>
+					<div class="about-section__content">
+						<div class="about-section__title">Our History</div>
+						<div class="about-section__subtitle">Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</div>
+						<a href="" class="about-section__btn button">Know More</a>
+					</div>
+				</div>
+			</section>
+			<section class="book">
+				<div class="book__container">
+					<div class="slide-main-slider__header header-block">
+						<div class="header-block__subtilte">Reservations</div>
+						<div class="header-block__title">Book A Table</div>
+					</div>
+					<div class="book__body">
+						<div class="book__items">
+							<div class="book__item">
+								<select name="form[]" class="book__form">
+									<option value="1" selected>1 person</option>
+									<option value="2">2 person</option>
+									<option value="3">3 person</option>
+									<option value="4">4 person</option>
+								</select>
+							</div>
+							<div class="book__item">
+								<select name="form[]" class="book__form">
+									<option value="1" selected>Пункт №1</option>
+									<option value="2">Пункт №2</option>
+									<option value="3">Пункт №3</option>
+									<option value="4">Пункт №4</option>
+								</select>
+							</div>
+							<div class="book__item">
+								<select name="form[]" class="book__form">
+									<option value="1" selected>11:00 AM</option>
+									<option value="2">12:00 AM</option>
+									<option value="3">14:00 AM</option>
+									<option value="4">16:00 AM</option>
+								</select>
+							</div>
+						</div>
+						<button type="submit" class="book__button button">Book Now</button>
+					</div>
+				</div>
 
-
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -119,7 +171,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220517012120"></script>
+	<script src="js/app.min.js?_v=20220518012441"></script>
 </body>
 
 </html>
