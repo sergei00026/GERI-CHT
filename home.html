@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220518012441">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220518233348">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -115,13 +115,14 @@
 				</div>
 			</section>
 			<section class="book">
-				<div class="book__container">
+				<div class="book__container" data-decor>
 					<div class="slide-main-slider__header header-block">
 						<div class="header-block__subtilte">Reservations</div>
 						<div class="header-block__title">Book A Table</div>
 					</div>
-					<div class="book__body">
+					<form class="book__body" action="" data-popup-message="#formMesage" data-dev>
 						<div class="book__items">
+
 							<div class="book__item">
 								<select name="form[]" class="book__form">
 									<option value="1" selected>1 person</option>
@@ -131,47 +132,163 @@
 								</select>
 							</div>
 							<div class="book__item">
-								<select name="form[]" class="book__form">
-									<option value="1" selected>Пункт №1</option>
-									<option value="2">Пункт №2</option>
-									<option value="3">Пункт №3</option>
-									<option value="4">Пункт №4</option>
-								</select>
+								<div class="book__input">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="12/05/2021" data-calendar class="input input-dark" data-required>
+								</div>
 							</div>
 							<div class="book__item">
-								<select name="form[]" class="book__form">
+								<select data-scroll name="form[]" class="book__form">
 									<option value="1" selected>11:00 AM</option>
 									<option value="2">12:00 AM</option>
 									<option value="3">14:00 AM</option>
-									<option value="4">16:00 AM</option>
+									<option value="5">16:00 AM</option>
+									<option value="6">17:00 AM</option>
+									<option value="7">18:00 AM</option>
+									<option value="8">19:00 AM</option>
+									<option value="9">20:00 AM</option>
+									<option value="10">21:00 AM</option>
 								</select>
 							</div>
 						</div>
 						<button type="submit" class="book__button button">Book Now</button>
-					</div>
+					</form>
 				</div>
 
 			</section>
+			<div class="menu-block">
+				<div class="menu-block__container menu-block__container_wide" data-decor>
+					<nav class="menu-block__menu">
+						<ul class="menu-block__list">
+							<li class="menu-block__item"><a href="" class="menu-block__link">Bar Menu</a></li>
+							<li class="menu-block__item"><a href="" class="menu-block__link">Food Menu</a></li>
+							<li class="menu-block__item"><a href="" class="menu-block__link">Desserts Menu</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="menu-block__bg">
+					<picture><source srcset="img/mainpage/menu/bg.webp" type="image/webp"><img src="img/mainpage/menu/bg.jpg" alt="menu-bg" class="menu-block__img"></picture>
+				</div>
+			</div>
+			<section class="special">
+				<div class="special__container">
+					<div class="special__header header-block">
+						<div class="header-block__subtilte">Menu that fits you palatte</div>
+						<div class="header-block__title">Today’s Special</div>
+					</div>
+					<div class="special__body">
+						<div class="special__table table-special">
+							<div class="table-special__title">Wine & Beer</div>
+							<div class="table-special__body">
+								<div class="table-special__item">
+									<div class="table-special__header">
+										<div class="table-special__value">Catena Malbec</div>
+										<div class="table-special__price">$59</div>
+									</div>
+									<div class="table-special__info">AU | Bottle</div>
+								</div>
+								<div class="table-special__item">
+									<div class="table-special__header">
+										<div class="table-special__value">La Vieille Rosé</div>
+										<div class="table-special__price">$44</div>
+									</div>
+									<div class="table-special__info">FR | 750 ml</div>
+								</div>
+								<div class="table-special__item">
+									<div class="table-special__header">
+										<div class="table-special__value">Rhino Pale Ale</div>
+										<div class="table-special__price">$31</div>
+									</div>
+									<div class="table-special__info">CA | 750 ml</div>
+								</div>
+								<div class="table-special__item">
+									<div class="table-special__header">
+										<div class="table-special__value">Irish Guinness
+										</div>
+										<div class="table-special__price">$26</div>
+									</div>
+									<div class="table-special__info">IE | 750 ml</div>
+								</div>
+								<div class="table-special__item">
+									<div class="table-special__header">
+										<div class="table-special__value">Chapel Hill Shiraz</div>
+										<div class="table-special__price">$56</div>
+									</div>
+									<div class="table-special__info">AU | Bottle</div>
+								</div>
+							</div>
+						</div>
+						<div class="special__image">
+							<picture><source srcset="img/mainpage/special//bg.webp" type="image/webp"><img src="img/mainpage/special//bg.png" alt="bg"></picture>
+						</div>
+						<div class="special__table table-special">
+							<div class="table-special__title">Cocktails</div>
+							<div class="table-special__body">
+								<div class="table-special__item">
+									<div class="table-special__header">
+										<div class="table-special__value">Aperol Spritz
+										</div>
+										<div class="table-special__price">$20</div>
+									</div>
+									<div class="table-special__info">Aperol | Villa Marchesi prosecco | soda | 30ml</div>
+								</div>
+								<div class="table-special__item">
+									<div class="table-special__header">
+										<div class="table-special__value">Dark 'N' Stormy
+										</div>
+										<div class="table-special__price">$16</div>
+									</div>
+									<div class="table-special__info">Dark rum | Ginger beer | Slice of lime. </div>
+								</div>
+								<div class="table-special__item">
+									<div class="table-special__header">
+										<div class="table-special__value">Chapel Hill Shiraz</div>
+										<div class="table-special__price">$56</div>
+									</div>
+									<div class="table-special__info">AU | Bottle</div>
+								</div>
+								<div class="table-special__item">
+									<div class="table-special__header">
+										<div class="table-special__value">Daiquiri
+										</div>
+										<div class="table-special__price">$10</div>
+									</div>
+									<div class="table-special__info">Rum | Citrus juice | Sugar</div>
+								</div>
+								<div class="table-special__item">
+									<div class="table-special__header">
+										<div class="table-special__value">Old Fashioned
+										</div>
+										<div class="table-special__price">$31</div>
+									</div>
+									<div class="table-special__info">Bourbon | Brown sugar | Angostura Bitters</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="special__btn button">View More</div>
+
+				</div>
+			</section>
 		</main>
+
+		<div id="formMesage" aria-hidden="true" class="popupnew">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">Закрыть</button>
+					<div class="popup__text">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
 		<footer class="footer">
 			<div class="footer__container">
 
 			</div>
 		</footer>
 	</div>
-	<!-- 
-<div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-			</div>
-		</div>
-	</div>
-</div>
- -->
-
-	<script src="js/app.min.js?_v=20220518012441"></script>
+	<script src="js/app.min.js?_v=20220518233348"></script>
 </body>
 
 </html>
