@@ -1032,6 +1032,16 @@ body::after {
   font-weight: 700;
   line-height: 175%;
   letter-spacing: 0.04em;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.button:hover {
+  color: #000;
+  font-weight: 900;
+  -webkit-box-shadow: 0 0 10px 0 #527c82 inset, 0 0 10px 4px #527c82;
+          box-shadow: 0 0 10px 0 #527c82 inset, 0 0 10px 4px #527c82;
 }
 
 .scroll {
@@ -1532,6 +1542,20 @@ body::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.mainpage::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+.mainpage::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #dcca87;
+}
+
+.mainpage::-webkit-scrollbar-track {
+  border-radius: 10px;
 }
 
 .main-slider {
@@ -2886,6 +2910,20 @@ body::after {
   gap: 8%;
 }
 
+.gallery__body::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+.gallery__body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #dcca87;
+}
+
+.gallery__body::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
 .gallery__slide-ibg {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 34%;
@@ -3035,6 +3073,23 @@ body::after {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #dcca87;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
 }
 
 .swiper {
@@ -3734,10 +3789,6 @@ body::after {
 }
 
 @media (max-width: 29.99875em) {
-  .body-main-slider__swiper {
-    margin: 0 -15px;
-  }
-
   .chef__image {
     margin: 0 -15px;
   }
